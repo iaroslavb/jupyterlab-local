@@ -1,0 +1,8 @@
+---
+jupyterlab:
+  name:     "jupyterlab"
+  cpus:     4
+  memory:   4096
+  gui:      false
+  box:      "ubuntu/xenial64"
+  ip:       192.168.88.220
