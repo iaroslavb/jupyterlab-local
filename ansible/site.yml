@@ -1,0 +1,8 @@
+---
+- name: common software and configuration
+  hosts: all
+  become: yes
+  become_method: sudo
+  roles:
+    - common
+

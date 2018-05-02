@@ -1,0 +1,17 @@
+---
+- name: install utils
+  apt: name={{ item }} state=latest
+  with_items:
+    - htop
+    - atop
+    - iotop
+    - strace
+    - gdb
+
+- name: enable autocomplete in interactive shell
+  copy:
+    src: bash.bashrc
+    dest: /etc/bash.bashrc
+    owner: root
+    group: root
+    mode: 0755
